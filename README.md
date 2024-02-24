@@ -12,4 +12,4 @@ react 2024 recap repositories
 
 - [x] simple to-do list
 - [x] coin tracker (coinpaprika)
-- [] movie app (yts.mx)
+- [x] movie app (yts.mx)
