@@ -11,4 +11,5 @@ react 2024 recap repositories
 ## tiny project
 
 - [x] simple to-do list
-- [] coin tracker
+- [x] coin tracker (coinpaprika)
+- [] movie app (yts.mx)
