@@ -1,24 +1,37 @@
-import styles from "./App.module.css";
-import { useEffect, useState } from "react";
-
-function Hello() {
-  useEffect(() => {
-    console.log("Im here! nice to mite you");
-    return () => console.log("이몸 퇴장..");
-  }, []);
-  return <h1>Hello</h1>;
-}
+import { useState } from "react";
 
 function App() {
-  const [showing, setShowing] = useState(false);
-  const onClick = () => {
-    setShowing((prev) => !prev);
-  };
+  const [toDo, setToDo] = useState("");
+  const [toDos, setToDos] = useState([]);
+
+  function onChange(event) {
+    setToDo(event.target.value);
+  }
+
+  function onSubmit(event) {
+    event.preventDefault();
+    if (toDo === "") return;
+    setToDo("");
+    setToDos((currentArray) => [...currentArray, toDo]);
+  }
+
   return (
     <div>
-      <h1 className={styles.title}>Welcome back react js!</h1>
-      {showing ? <Hello /> : null}
-      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+      <h1>My To Dos ({toDos.length})</h1>
+      <form onSubmit={onSubmit}>
+        <input
+          onChange={onChange}
+          value={toDo}
+          type="text"
+          placeholder="Write your to do ..."
+        />
+        <button>Add To Do</button>
+      </form>
+      <ul>
+        {toDos.map((todo, key) => (
+          <p key={key}> {todo} </p>
+        ))}
+      </ul>
     </div>
   );
 }
