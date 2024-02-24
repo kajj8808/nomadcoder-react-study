@@ -8,6 +8,7 @@ react 2024 recap repositories
 - [x] useEffect
 - [x] useState
 
-## mini project
+## tiny project
 
-- [] simple to-do list
+- [x] simple to-do list
+- [] coin tracker
