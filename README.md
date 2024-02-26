@@ -1,6 +1,6 @@
-# React recap 2024 02
+# Nomadcoder React Study 2024 02
 
-react 2024 recap repositories
+Nomadcoder React Study repositories
 
 ## State & Effect
 

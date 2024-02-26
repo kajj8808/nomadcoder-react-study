@@ -3,8 +3,12 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 import "./styles.css";
 import Header from "./components/Header";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Marvelous React";
+  }, []);
   return (
     <Router>
       <Header />
