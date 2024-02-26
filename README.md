@@ -2,15 +2,7 @@
 
 Nomadcoder React Study repositories
 
-## State & Effect
+## Pages
 
-- [x] cleanup (Effect)
-- [x] useEffect
-- [x] useState
-
-## tiny project
-
-- [x] simple to-do list
-- [x] coin tracker (coinpaprika)
-- [x] movie app (yts.mx)
-- [x] marvelous react
+- [x] Home
+- [x] Detail
