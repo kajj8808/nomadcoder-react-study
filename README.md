@@ -1,6 +1,6 @@
 # Pomodoro 
 
-Requirements:
+## Requirements:
 - [x] The app should have a timer that counts down from 25 minutes.
 - [x] The timer should display the current time in MM:SS format (i.e. 25:00, 24:59, 24:58, etc).
 - [x] The timer should have a play and pause button.
