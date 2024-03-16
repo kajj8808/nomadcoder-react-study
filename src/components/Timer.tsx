@@ -62,7 +62,7 @@ function Timer() {
         goal < 12 ? setGoal((currentGoal) => currentGoal + 1) : setGoal(0);
       }
     }
-  }, [hour, second]);
+  }, [minutes, second]);
 
   return (
     <Container>
